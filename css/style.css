@@ -12,3 +12,50 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+/* Styling the top part ... avatars and score */
+
+.container {
+  /*width: 100%;*/
+  max-width:initial;
+}
+.container > .row {
+  margin: 0;
+}
+.container > .row > .col {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.score-board-container{
+  min-height: 1vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.score-board-row{
+    width: 100%;
+}
+
+.img-avatar{
+    object-fit: contain;
+}
+
+#computer-score, #human-score {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-title{
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
