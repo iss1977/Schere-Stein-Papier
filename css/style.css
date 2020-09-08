@@ -22,7 +22,7 @@
 .container > .row {
   margin: 0;
 }
-.container > .row > .col {
+.score-board-col {
   padding: 0;
   display: flex;
   align-items: center;
@@ -31,17 +31,22 @@
 }
 
 .score-board-container{
-  min-height: 1vh;
+  min-height: 10vh;
   display: flex;
   align-items: stretch;
 }
 
 .score-board-row{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-avatar{
-    object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 #computer-score, #human-score {
@@ -58,4 +63,80 @@
   font-size: 2rem;
   margin: 0;
   padding: 0;
+}
+
+/* Styling the players frames*/
+.players-container{
+  min-height: 10vh;
+  display: flex; /* to extend the contained row to the full height*/
+  height: auto;
+  
+}
+
+.players-container>.row{
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: max-content;
+  
+}
+
+.player-frame{
+  /* min-height: 30vh; */
+  height: 100%;
+  /* border: 1px solid darkgrey; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.player-frame > col{
+  height: 100%;
+}
+
+.schere-papier-stein-button{
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px white solid;  
+  height: auto;
+}
+
+.hover-effect:hover{
+  border: 3px solid red;  
+}
+
+.active-choice{
+  border: 3px green solid;  
+
+}
+
+.img-ssp{  /* is the class that contains the images with schtein, schere, papier ...*/
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  
+}
+
+
+/*--------------  Styling the win-lose container ------------------*/
+.win-lose-container{
+  height: 10vh;
+}
+.win-lose-container>.row{
+    display:flex;
+    height: 100%;
+}
+
+.win-lose-col{
+    display: flex;
+}
+
+.win-lose-col>img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
